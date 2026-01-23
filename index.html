@@ -2,526 +2,717 @@
 <html lang="tr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Öz Nas Nakliyat | Siirt Evden Eve Nakliyat</title>
-  <meta name="description" content="Öz Nas Nakliyat: Siirt evden eve, ofis, asansörlü ve şehirler arası nakliyat. Ücretsiz keşif, net fiyat, hızlı teklif." />
-  <meta name="robots" content="index,follow" />
+  <meta name="description" content="Siirt evden eve nakliyat: ev, ofis, asansörlü ve şehirler arası taşımacılık. Ücretsiz keşif, net fiyat ve hızlı teklif. WhatsApp’tan anında teklif alın." />
   <link rel="canonical" href="https://huseyinnak.github.io/Nakliyat-site/" />
 
   <!-- Open Graph -->
-  <meta property="og:locale" content="tr_TR" />
-  <meta property="og:type" content="website" />
   <meta property="og:title" content="Öz Nas Nakliyat | Siirt Evden Eve Nakliyat" />
-  <meta property="og:description" content="Siirt evden eve nakliyat: ücretsiz keşif, net fiyat, güvenli taşıma, profesyonel ekip." />
+  <meta property="og:description" content="Ev, ofis, asansörlü ve şehirler arası taşımacılık. Ücretsiz keşif, net fiyat ve hızlı teklif." />
+  <meta property="og:type" content="website" />
   <meta property="og:url" content="https://huseyinnak.github.io/Nakliyat-site/" />
-  <meta property="og:image" content="https://i.ibb.co/hJRTTtvy/efae8a65-9379-4f97-a8f0-bb124a45b42a.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- JSON-LD -->
+  <!-- JSON-LD LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"MovingCompany",
     "name":"Öz Nas Nakliyat",
-    "url":"https://huseyinnak.github.io/Nakliyat-site/",
-    "image":"https://i.ibb.co/ZCWYKW2/ad2973bd-9772-416f-a782-7be568a2f0ac.jpg",
-    "telephone":"+90 546 712 96 47",
-    "address":{"@type":"PostalAddress","addressLocality":"Siirt","addressCountry":"TR"},
     "areaServed":"Siirt",
-    "openingHours":"Mo-Su 08:00-21:00"
+    "telephone":"+905467129647",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"Siirt",
+      "addressCountry":"TR"
+    },
+    "openingHours":"Mo-Su 08:00-21:00",
+    "url":"https://huseyinnak.github.io/Nakliyat-site/"
   }
   </script>
 
   <style>
     :root{
-      --primary:#0f2e4e;
-      --accent:#c62828;
-      --bg:#f6f8fb;
-      --text:#111827;
-      --muted:#6b7280;
-      --card:#ffffff;
-      --radius:14px;
-      --shadow:0 12px 28px rgba(0,0,0,.10);
+      --primary:#0b4ea2;
+      --primary2:#083a7a;
+      --bg:#0b1220;
+      --card:#0f1a30;
+      --text:#0b1020;
+      --muted:#5b6478;
+      --white:#fff;
+      --radius:18px;
+      --shadow:0 14px 40px rgba(0,0,0,.18);
     }
-    *{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-      color:var(--text);
-      line-height:1.6;
-      background:#fff;
-      -webkit-text-size-adjust:100%;
-    }
-    a{color:inherit}
-    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+    *{box-sizing:border-box}
     html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:#0b1020;
+      background:#f4f7ff;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{width:min(1100px, 92%); margin:0 auto}
 
-    /* TOP BAR */
+    /* Top bar */
     .topbar{
-      background:var(--primary);
+      background:linear-gradient(90deg, var(--primary2), var(--primary));
       color:#fff;
-      font-size:14px;
-      padding:10px 16px;
-      display:flex;
-      justify-content:space-between;
-      gap:10px;
-      flex-wrap:wrap;
-      border-bottom:1px solid rgba(255,255,255,.12);
+      font-weight:800;
+      letter-spacing:.2px;
     }
-    .topbar a{color:#fff;text-decoration:none;font-weight:950}
-    .topbar .right{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    .topbar .sep{opacity:.55}
-
-    /* HEADER */
-    header{
-      position:sticky; top:0; z-index:20;
-      background:#fff;
-      border-bottom:1px solid #eef2f7;
-      backdrop-filter: blur(8px);
-    }
-    .nav{
-      height:86px;
+    .topbar .inner{
       display:flex;
       align-items:center;
       justify-content:space-between;
-      gap:14px;
-      position:relative;
+      gap:12px;
+      padding:10px 0;
+      flex-wrap:wrap;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.20);
+      backdrop-filter: blur(8px);
+      white-space:nowrap;
+    }
+    .pill a{opacity:.98}
+    .pill strong{font-weight:900}
+
+    /* Header / Nav */
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(11,18,32,.75);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid rgba(255,255,255,.10);
+    }
+    .navrow{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:12px 0;
     }
 
-    /* BRAND (LOGO + TEXT) */
     .brand{
       display:flex;
       align-items:center;
-      gap:16px;
-      text-decoration:none;
-      min-width:240px;
-      flex:1 1 auto;
+      gap:12px;
+      min-width:220px;
     }
 
-    /* ✅ Logo büyük + belirgin (örneğe yakın) */
-    .logo-wrap{
-      width:96px;
-      height:96px;
-      padding:10px;
-      border-radius:22px;
+    /* Logo büyütme + belirginleştirme */
+    .brand .logo-wrap{
+      width:60px;
+      height:60px;
+      border-radius:16px;
       background:#fff;
-      border:2px solid rgba(15,46,78,.12);
-      box-shadow:0 16px 30px rgba(0,0,0,.14);
+      border:1px solid rgba(0,0,0,.06);
+      box-shadow:0 10px 24px rgba(0,0,0,.18);
       display:grid;
       place-items:center;
+      overflow:hidden;
       flex:0 0 auto;
     }
-    .logo-wrap img{
+    .brand img{
       width:100%;
       height:100%;
-      object-fit:contain;
-      border-radius:16px;
+      object-fit:cover; /* logo kutuyu doldursun */
+      transform: scale(1.08); /* çok az büyüt */
     }
-
-    /* ✅ Yazılar logo yanında düzgün ortalanmış */
-    .brand-text{
+    .brand .texts{
       display:flex;
       flex-direction:column;
-      justify-content:center;
       line-height:1.12;
-      padding-right:8px;
+      color:#fff;
     }
-    .brand-text strong{
-      font-size:26px;
-      color:var(--primary);
-      font-weight:1000;
-      letter-spacing:-.4px;
+    .brand .texts .title{
+      font-size:18px;
+      font-weight:950;
+      letter-spacing:.2px;
     }
-    .brand-text span{
-      font-size:16px;
-      color:var(--muted);
-      margin-top:6px;
+    .brand .texts .subtitle{
+      font-size:12.5px;
+      opacity:.88;
       font-weight:800;
+      text-align:left;
     }
 
-    /* MENU (desktop) */
-    .menu{
+    nav ul{
+      list-style:none;
       display:flex;
       gap:14px;
+      padding:0;
+      margin:0;
       align-items:center;
-      flex:0 0 auto;
     }
-    .menu a{
-      text-decoration:none;
-      font-weight:950;
+    nav a{
+      color:#fff;
+      font-weight:850;
       font-size:14px;
-      padding:10px 12px;
+      opacity:.92;
+      padding:10px 10px;
       border-radius:12px;
-      color:var(--primary);
-      background:transparent;
     }
-    .menu a:hover{
-      background:rgba(198,40,40,.08);
-      color:var(--accent);
-    }
+    nav a:hover{background:rgba(255,255,255,.10); opacity:1}
 
-    /* ✅ Mobil hamburger beyaz görünmesin */
-    .hamb{
-      display:none;
-      border:none;
-      background:var(--primary);
-      color:#fff;
-      padding:12px 14px;
-      border-radius:14px;
-      font-size:22px;
-      font-weight:900;
-      box-shadow:0 12px 24px rgba(15,46,78,.18);
-    }
-
-    /* HERO */
-    .hero{
-      color:#fff;
-      background:
-        linear-gradient(180deg, rgba(0,0,0,.62), rgba(0,0,0,.35)),
-        url("https://i.ibb.co/hJRTTtvy/efae8a65-9379-4f97-a8f0-bb124a45b42a.jpg");
-      background-size:cover;
-      background-position:center;
-      min-height:62vh;
+    .nav-cta{
       display:flex;
+      gap:10px;
       align-items:center;
+      flex-wrap:wrap;
     }
-    .hero .wrap{padding:72px 0}
-    .hero h1{font-size:38px;letter-spacing:-.4px;max-width:760px}
-    .hero p{margin-top:10px;font-size:17px;max-width:760px;opacity:.95}
-    .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
     .btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:10px;
-      padding:14px 16px;border-radius:14px;text-decoration:none;font-weight:950;
-      box-shadow:var(--shadow);
-      border:1px solid rgba(255,255,255,.18);
-      backdrop-filter: blur(6px);
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:14px;
+      font-weight:900;
+      border:1px solid rgba(255,255,255,.20);
+      background:rgba(255,255,255,.10);
+      color:#fff;
+      box-shadow:0 12px 26px rgba(0,0,0,.18);
+      white-space:nowrap;
     }
-    .btn.red{background:var(--accent);color:#fff}
-    .btn.wa{background:#25D366;color:#fff}
-    .btn.ghost{background:rgba(255,255,255,.12);color:#fff}
+    .btn.primary{
+      background:linear-gradient(135deg, #2a8bff, #1fd2a4);
+      border:0;
+      color:#061523;
+    }
 
-    /* SECTIONS */
-    section{padding:62px 0}
-    .title{text-align:center;margin-bottom:26px}
-    .title h2{font-size:30px;color:var(--primary)}
-    .title p{margin-top:8px;color:var(--muted);max-width:860px;margin-left:auto;margin-right:auto}
+    /* Mobile menu button (beyaz blok sorununu çözüyoruz) */
+    .menu-btn{
+      display:none;
+      appearance:none;
+      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.10);
+      color:#fff;
+      padding:10px 12px;
+      border-radius:14px;
+      font-weight:950;
+      line-height:1;
+    }
 
-    .grid{
-      display:grid;gap:14px;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    /* Hero */
+    .hero{
+      background:radial-gradient(1200px 500px at 20% 0%, rgba(42,139,255,.35), transparent 60%),
+                 radial-gradient(900px 400px at 80% 10%, rgba(31,210,164,.25), transparent 55%),
+                 linear-gradient(180deg, #081022, #0a1330 70%, #f4f7ff 70%);
+      padding:34px 0 0;
+      color:#fff;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:22px;
+      align-items:stretch;
+      padding-bottom:34px;
+    }
+    .hero h1{
+      margin:0 0 10px;
+      font-size: clamp(26px, 3.5vw, 44px);
+      line-height:1.05;
+      letter-spacing:.2px;
+    }
+    .hero p{
+      margin:0 0 18px;
+      font-weight:750;
+      opacity:.9;
+      color:rgba(255,255,255,.92);
+    }
+    .hero .cta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      margin-top:10px;
+    }
+
+    /* Mini güven bloğu (3’lü) */
+    .trust{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      font-weight:900;
+      font-size:13px;
+    }
+    .trust span{
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.22);
+      padding:8px 12px;
+      border-radius:999px;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-card{
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.16);
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow: var(--shadow);
+    }
+    .hero-card h3{margin:0 0 10px; font-size:16px; font-weight:950}
+    .hero-card ul{margin:0; padding-left:18px; opacity:.95; font-weight:750}
+    .hero-card li{margin:8px 0}
+
+    /* Sections */
+    section{padding:44px 0}
+    .section-title{
+      font-size:28px;
+      margin:0 0 8px;
+      letter-spacing:.2px;
+    }
+    .section-sub{
+      margin:0 0 18px;
+      color:var(--muted);
+      font-weight:750;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:14px;
     }
     .card{
-      background:var(--card);
-      border:1px solid #eef2f7;
+      background:#fff;
+      border:1px solid rgba(0,0,0,.06);
       border-radius:var(--radius);
-      padding:18px;
-      box-shadow:0 10px 22px rgba(0,0,0,.06);
+      padding:16px;
+      box-shadow:0 14px 30px rgba(2,8,23,.08);
     }
-    .card b{display:block;margin-top:6px}
+    .card h4{margin:0 0 6px; font-size:16px; font-weight:950}
+    .card p{margin:0; color:var(--muted); font-weight:750}
 
-    /* ABOUT + ADVANTAGES block */
-    .block{
-      background:linear-gradient(180deg, rgba(15,46,78,.05), rgba(198,40,40,.03));
-      border:1px solid #eef2f7;
-      border-radius:var(--radius);
-      padding:18px;
+    /* About layout */
+    .about-wrap{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:14px;
+      align-items:start;
     }
-    .block h3{
-      color:var(--primary);
-      font-size:20px;
-      letter-spacing:-.2px;
-      margin-bottom:8px;
-    }
-    .block p{color:var(--text)}
-    .list{
-      margin-top:12px;
+
+    /* Advantages bullet list (numara yok, ok var) */
+    .bullets{
+      list-style:none;
+      padding:0;
+      margin:12px 0 0;
       display:grid;
       gap:10px;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     }
-    .li{
-      background:#fff;
-      border:1px solid #eef2f7;
-      border-radius:14px;
-      padding:12px 12px;
+    .bullets li{
       display:flex;
       gap:10px;
       align-items:flex-start;
-      box-shadow:0 8px 18px rgba(0,0,0,.05);
+      background:#fff;
+      border:1px solid rgba(0,0,0,.06);
+      border-radius:16px;
+      padding:12px 12px;
+      box-shadow:0 12px 26px rgba(2,8,23,.06);
+      font-weight:850;
+      color:#1a2240;
     }
-    .badge{
-      width:26px;height:26px;border-radius:999px;
-      display:grid;place-items:center;
-      background:rgba(198,40,40,.10);
-      color:var(--accent);
-      font-weight:1000;
+    .bullets .icon{
+      width:28px;
+      height:28px;
+      border-radius:10px;
+      background:linear-gradient(135deg, #2a8bff, #1fd2a4);
+      display:grid;
+      place-items:center;
       flex:0 0 auto;
+      color:#061523;
+      font-weight:950;
     }
+    .bullets span{line-height:1.25}
 
-    /* FORM */
-    .form{max-width:640px;margin:0 auto;display:grid;gap:12px}
-    input,textarea{
-      padding:12px 12px;border-radius:14px;
-      border:1px solid #d1d5db;font-size:15px;outline:none;
-    }
-    input:focus,textarea:focus{
-      border-color:rgba(15,46,78,.6);
-      box-shadow:0 0 0 4px rgba(15,46,78,.12);
-    }
-    textarea{min-height:120px;resize:vertical}
-    button{
-      padding:14px 14px;border-radius:14px;border:0;
-      background:var(--primary);color:#fff;
-      font-weight:950;font-size:16px;box-shadow:var(--shadow);
-    }
-
-    /* CONTACT */
-    .contact{
-      display:grid;gap:14px;
-      grid-template-columns:1fr 1fr;
+    /* Offer / Form */
+    .offer-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
       align-items:start;
     }
-    .contact iframe{
-      width:100%;height:320px;border:0;border-radius:var(--radius);
-      overflow:hidden;
+    .form{
+      display:grid;
+      gap:10px;
+    }
+    .input{
+      width:100%;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid rgba(0,0,0,.12);
+      font-weight:800;
+      outline:none;
+    }
+    .input:focus{border-color: rgba(42,139,255,.6); box-shadow:0 0 0 4px rgba(42,139,255,.15)}
+    .form .btn{
+      border:0;
+      cursor:pointer;
+    }
+    .form .btn.primary{color:#061523}
+    .hint{color:var(--muted); font-weight:750; margin:0}
+
+    /* Process */
+    .steps{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:12px;
+    }
+    .step{
+      background:#fff;
+      border:1px solid rgba(0,0,0,.06);
+      border-radius:var(--radius);
+      padding:14px;
+      box-shadow:0 14px 30px rgba(2,8,23,.06);
+    }
+    .step b{display:block; margin-bottom:6px; font-size:14px}
+    .step p{margin:0; color:var(--muted); font-weight:750}
+
+    /* Footer */
+    footer{
+      background:linear-gradient(180deg, #0a1330, #081022);
+      color:#fff;
+      padding:26px 0;
+      margin-top:30px;
+    }
+    footer .muted{opacity:.75; font-weight:750}
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-grid{grid-template-columns:1fr}
+      .about-wrap{grid-template-columns:1fr}
+      .offer-grid{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr 1fr}
+      .grid-3{grid-template-columns:1fr}
+      nav ul{display:none}
+      .menu-btn{display:inline-flex}
+    }
+    @media (max-width: 520px){
+      .steps{grid-template-columns:1fr}
+      .brand .texts .title{font-size:16px}
+      .brand .texts .subtitle{font-size:12px}
+      .brand .logo-wrap{width:56px; height:56px}
     }
 
-    /* Floating WA */
-    .float-wa{
-      position:fixed;right:18px;bottom:18px;
-      width:58px;height:58px;border-radius:999px;
-      background:#25D366;color:#fff;
-      display:grid;place-items:center;
-      text-decoration:none;font-size:26px;
-      box-shadow:0 16px 30px rgba(37,211,102,.28);
-      z-index:50;
+    /* Mobile nav panel */
+    .mobile-nav{
+      display:none;
+      padding:10px 0 14px;
     }
-
-    /* Mobile */
-    @media (max-width: 820px){
-      .nav{height:90px}
-      .hamb{display:inline-flex}
-      .menu{
-        display:none;
-        position:absolute; right:16px; top:90px;
-        background:var(--bg);            /* ✅ bembeyaz değil */
-        border:1px solid #e7ecf5;
-        border-radius:16px;
-        box-shadow:var(--shadow);
-        padding:10px;
-        flex-direction:column;
-        gap:6px;
-        min-width: 240px;
-      }
-      .menu a{background:#fff;border:1px solid #eef2f7}
-      .menu.active{display:flex}
-
-      .logo-wrap{width:76px;height:76px;padding:8px;border-radius:20px}
-      .brand-text strong{font-size:20px}
-      .brand-text span{font-size:14px}
-
-      .hero h1{font-size:30px}
-      .hero p{font-size:16px}
-      .contact{grid-template-columns:1fr}
+    .mobile-nav a{
+      display:block;
+      padding:12px 10px;
+      margin:6px 0;
+      border-radius:14px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      color:#fff;
+      font-weight:900;
     }
+    .mobile-nav a:active{transform: scale(.99)}
   </style>
 </head>
 
 <body>
+  <!-- Top Bar -->
   <div class="topbar">
-    <div>⏰ 08:00 – 21:00</div>
-    <div class="right">
-      📞 <a href="tel:05467129647">0546 712 96 47</a>
-      <span class="sep">|</span>
-      <a href="https://wa.me/905467129647?text=Merhaba,%20Öz%20Nas%20Nakliyat'tan%20nakliyat%20teklifi%20almak%20istiyorum.">WhatsApp</a>
+    <div class="container">
+      <div class="inner">
+        <div class="pill">⏰ <strong>08:00 – 21:00</strong></div>
+        <div class="pill">📞 <a href="tel:+905467129647"><strong>0546 712 96 47</strong></a></div>
+        <div class="pill">💬 <a href="https://wa.me/905467129647" target="_blank" rel="noopener"><strong>WhatsApp</strong></a></div>
+      </div>
     </div>
   </div>
 
+  <!-- Header -->
   <header>
     <div class="container">
-      <div class="nav">
-        <a class="brand" href="#hero" aria-label="Öz Nas Nakliyat">
+      <div class="navrow">
+        <a class="brand" href="#top" aria-label="Öz Nas Nakliyat">
           <div class="logo-wrap">
-            <img src="https://i.ibb.co/ZCWYKW2/ad2973bd-9772-416f-a782-7be568a2f0ac.jpg" alt="Öz Nas Nakliyat Logo">
+            <img src="https://i.ibb.co/qPC84Ws/ad2973bd-9772-416f-a782-7be568a2f0ac.jpg" alt="Öz Nas Nakliyat Logo" />
           </div>
-          <div class="brand-text">
-            <strong>Öz Nas Nakliyat</strong>
-            <span>Siirt Evden Eve Taşımacılık</span>
+          <div class="texts">
+            <div class="title">Öz Nas Nakliyat</div>
+            <div class="subtitle">Siirt Evden Eve Taşımacılık</div>
           </div>
         </a>
 
-        <button class="hamb" type="button" aria-label="Menüyü aç/kapat" onclick="toggleMenu()">☰</button>
-
-        <nav class="menu" id="menu">
-          <a href="#hero" onclick="closeMenu()">Anasayfa</a>
-          <a href="#services" onclick="closeMenu()">Hizmetler</a>
-          <a href="#about" onclick="closeMenu()">Hakkımızda</a>
-          <a href="#offer" onclick="closeMenu()">Teklif</a>
-          <a href="#process" onclick="closeMenu()">Süreç</a>
-          <a href="#contact" onclick="closeMenu()">İletişim</a>
+        <!-- Desktop Nav (istenen sıra) -->
+        <nav aria-label="Site menüsü">
+          <ul>
+            <li><a href="#about">Hakkımızda</a></li>
+            <li><a href="#services">Hizmetler</a></li>
+            <li><a href="#process">Süreç</a></li>
+            <li><a href="#offer">Teklif</a></li>
+            <li><a href="#contact">İletişim</a></li>
+          </ul>
         </nav>
+
+        <div class="nav-cta">
+          <a class="btn" href="tel:+905467129647">📞 Hemen Ara</a>
+          <a class="btn primary" href="https://wa.me/905467129647" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Menüyü aç/kapat">☰</button>
+        </div>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#about">Hakkımızda</a>
+        <a href="#services">Hizmetler</a>
+        <a href="#process">Süreç</a>
+        <a href="#offer">Teklif</a>
+        <a href="#contact">İletişim</a>
       </div>
     </div>
   </header>
 
-  <section class="hero" id="hero">
+  <!-- Hero -->
+  <main id="top" class="hero">
     <div class="container">
-      <div class="wrap">
-        <h1>Siirt’te Güvenilir Evden Eve Nakliyat</h1>
-        <p>Ev, ofis, asansörlü ve şehirler arası taşımacılık. Ücretsiz keşif ve net fiyat ile hızlı teklif.</p>
+      <div class="hero-grid">
+        <div>
+          <h1>Siirt’te Güvenilir Evden Eve Nakliyat</h1>
+          <p>Ev, ofis, asansörlü ve şehirler arası taşımacılık. Ücretsiz keşif, net fiyat ve hızlı teklif.</p>
 
-        <div class="cta">
-          <a class="btn red" href="tel:05467129647">📞 Hemen Ara</a>
-          <a class="btn wa" href="https://wa.me/905467129647?text=Merhaba,%20Öz%20Nas%20Nakliyat'tan%20nakliyat%20teklifi%20almak%20istiyorum.">💬 WhatsApp’tan Teklif Al</a>
-          <a class="btn ghost" href="#offer">⚡ Hızlı Teklif Formu</a>
+          <div class="cta">
+            <a class="btn" href="tel:+905467129647">📞 Hemen Ara</a>
+            <a class="btn primary" href="https://wa.me/905467129647" target="_blank" rel="noopener">💬 WhatsApp’tan Teklif Al</a>
+            <a class="btn" href="#offer">⚡ Hızlı Teklif Formu</a>
+          </div>
+
+          <!-- 3’lü mini güven bloğu -->
+          <div class="trust" aria-label="Güven blokları">
+            <span>✔ 15+ Yıl Tecrübe</span>
+            <span>✔ Ücretsiz Keşif</span>
+            <span>✔ Net Fiyat</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Hızlıca Neler Yapıyoruz?</h3>
+          <ul>
+            <li>Taşıma öncesi keşif ve planlama</li>
+            <li>Güvenli paketleme ve dikkatli taşıma</li>
+            <li>Zamanında teslim ve yerleştirme</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- About (1. sıra) -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">Hakkımızda</h2>
+      <p class="section-sub">Siirt’te evden eve ve ofis taşımacılığında planlı, güvenli ve düzenli hizmet.</p>
+
+      <div class="about-wrap">
+        <div class="card">
+          <h3 style="margin:0 0 10px; font-weight:950;">Siirt Evden Eve Nakliyat</h3>
+          <p style="margin:0; color:var(--muted); font-weight:800; line-height:1.55;">
+            Öz Nas Nakliyat olarak 15 yılı aşkın tecrübemiz ve uzman ekibimizle, evden eve ve ofis taşımacılığı alanında müşterilerimize kaliteli, güvenli ve ekonomik hizmet sunuyoruz.
+            <br><br>
+            Taşınma sürecinizi kolay, hızlı ve sorunsuz hale getirmek için buradayız. Bizimle iletişime geçmekten çekinmeyin.
+          </p>
+
+          <h3 style="margin:18px 0 10px; font-weight:950;">Avantajlarımız</h3>
+          <ul class="bullets">
+            <li><div class="icon">➜</div><span>Zamanında gelir, işi söz verdiğimiz gibi tamamlarız.</span></li>
+            <li><div class="icon">➜</div><span>Fiyatı baştan netleştirir, sonradan ek ücret çıkarmaz.</span></li>
+            <li><div class="icon">➜</div><span>Eşyalarınızı kendi eşyamız gibi özenle paketleriz.</span></li>
+            <li><div class="icon">➜</div><span>Tecrübeli ekiple temiz ve düzenli çalışırız.</span></li>
+            <li><div class="icon">➜</div><span>Kırılacak eşyalar için özel ambalajlama yaparız.</span></li>
+            <li><div class="icon">➜</div><span>Mobilya sökme ve kurulum işlemleri ustalarımız tarafından yapılır.</span></li>
+            <li><div class="icon">➜</div><span>Şehir içi ve şehirler arası güvenli nakliyat sağlarız.</span></li>
+            <li><div class="icon">➜</div><span>Siirt’te memnun müşteri referanslarıyla çalışıyoruz.</span></li>
+            <li><div class="icon">➜</div><span>Asansörlü taşımacılık imkanı sunarız.</span></li>
+            <li><div class="icon">➜</div><span>Ücretsiz keşif ve net fiyat garantisi veririz.</span></li>
+            <li><div class="icon">➜</div><span>Taşınma stresini en aza indiririz.</span></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 10px; font-weight:950;">Hızlı İletişim</h3>
+          <p style="margin:0 0 12px; color:var(--muted); font-weight:800; line-height:1.55;">
+            Teklif için arayın veya WhatsApp’tan yazın. Taşınma detaylarını alıp hızlıca fiyat çıkaralım.
+          </p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn" style="color:#061523; background:linear-gradient(135deg,#2a8bff,#1fd2a4); border:0;" href="https://wa.me/905467129647" target="_blank" rel="noopener">💬 WhatsApp</a>
+            <a class="btn" href="tel:+905467129647">📞 Ara</a>
+          </div>
+          <div style="margin-top:14px; color:var(--muted); font-weight:800;">
+            Çalışma Saatleri: 08:00 – 21:00
+          </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Services (2. sıra) -->
   <section id="services">
     <div class="container">
-      <div class="title">
-        <h2>Hizmetlerimiz</h2>
-        <p>İhtiyacınıza göre ekip, araç ve planlamayı ayarlayıp taşıma işini sorunsuz tamamlamayı hedefleriz.</p>
-      </div>
+      <h2 class="section-title">Hizmetlerimiz</h2>
+      <p class="section-sub">İhtiyacınıza göre ekip, araç ve planlamayı ayarlayıp taşıma işini sorunsuz tamamlamayı hedefleriz.</p>
 
-      <div class="grid">
-        <div class="card">🏠 <b>Evden Eve Nakliyat</b> Paketleme, taşıma, yerleştirme.</div>
-        <div class="card">🏢 <b>Ofis Taşımacılığı</b> Planlı taşıma ve düzenli sök-tak.</div>
-        <div class="card">🚚 <b>Şehirler Arası</b> Güvenli yükleme, zamanında teslim.</div>
-        <div class="card">⬆️ <b>Asansörlü Taşıma</b> Katlı binalar için hızlı çözüm.</div>
-        <div class="card">📦 <b>Parça Eşya</b> Az eşya taşıma opsiyonu.</div>
-        <div class="card">🧰 <b>Paketleme</b> Kırılacaklar için özel koruma.</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ✅ NOTLAR: Hakkımızda + Avantajlar -->
-  <section id="about" style="background:var(--bg);">
-    <div class="container">
-      <div class="title">
-        <h2>Hakkımızda</h2>
-        <p>Siirt evden eve nakliyatta güven, hız ve net fiyat prensibiyle çalışırız.</p>
-      </div>
-
-      <div class="block">
-        <h3>Siirt Evden Eve Nakliyat</h3>
-        <p>
-          Öz Nas Nakliyat olarak 15 yılı aşkın tecrübemiz ve uzman ekibimizle,
-          evden eve ve ofis taşımacılığı alanında müşterilerimize kaliteli,
-          güvenli ve ekonomik hizmet sunuyoruz.
-        </p>
-        <p style="margin-top:10px">
-          Taşınma sürecinizi kolay, hızlı ve sorunsuz hale getirmek için buradayız.
-          Bizimle iletişime geçmekten çekinmeyin.
-        </p>
-
-        <h3 style="margin-top:18px">Avantajlarımız</h3>
-
-        <div class="list" aria-label="Avantajlar listesi">
-          <div class="li"><div class="badge">1</div><div>Zamanında gelir, işi söz verdiğimiz gibi tamamlarız.</div></div>
-          <div class="li"><div class="badge">2</div><div>Fiyatı baştan konuşur, sonradan sürpriz çıkarmayız.</div></div>
-          <div class="li"><div class="badge">3</div><div>Eşyalarınızı kendi eşyamız gibi özenle paketleriz.</div></div>
-          <div class="li"><div class="badge">4</div><div>Tecrübeli ekiple temiz ve düzenli çalışırız.</div></div>
-          <div class="li"><div class="badge">5</div><div>Kırılacak eşyalar için özel ambalajlama yaparız.</div></div>
-          <div class="li"><div class="badge">6</div><div>Mobilya sökme ve kurulum işlemleri ustalarımız tarafından yapılır.</div></div>
-          <div class="li"><div class="badge">7</div><div>Şehir içi ve şehirler arası güvenli nakliyat sağlarırız.</div></div>
-          <div class="li"><div class="badge">8</div><div>Siirt’te memnun müşteri referanslarıyla çalışıyoruz.</div></div>
-          <div class="li"><div class="badge">9</div><div>Asansörlü taşımacılık imkanı sunarız.</div></div>
-          <div class="li"><div class="badge">10</div><div>Ücretsiz keşif ve net fiyat garantisi veririz.</div></div>
-          <div class="li"><div class="badge">11</div><div>Taşınma stresini en aza indiririz.</div></div>
+      <div class="grid-3">
+        <div class="card">
+          <h4>Evden Eve Nakliyat</h4>
+          <p>Paketleme, taşıma, yerleştirme.</p>
+        </div>
+        <div class="card">
+          <h4>Ofis Taşımacılığı</h4>
+          <p>Planlı taşıma ve düzenli sök-tak.</p>
+        </div>
+        <div class="card">
+          <h4>Şehirler Arası</h4>
+          <p>Güvenli yükleme, zamanında teslim.</p>
+        </div>
+        <div class="card">
+          <h4>Asansörlü Taşıma</h4>
+          <p>Katlı binalar için hızlı çözüm.</p>
+        </div>
+        <div class="card">
+          <h4>Parça Eşya</h4>
+          <p>Az eşya taşıma opsiyonu.</p>
+        </div>
+        <div class="card">
+          <h4>Paketleme</h4>
+          <p>Kırılacaklar için özel koruma.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ✅ Teklif formu: WhatsApp'a yönlendir -->
-  <section id="offer">
-    <div class="container">
-      <div class="title">
-        <h2>Ücretsiz Ekspertiz / Hızlı Teklif</h2>
-        <p>Bilgileri doldurun, WhatsApp üzerinden teklif mesajı otomatik hazırlansın.</p>
-      </div>
-
-      <form class="form" onsubmit="sendToWhatsApp(event)">
-        <input id="f_name" required placeholder="Ad Soyad" />
-        <input id="f_phone" required type="tel" placeholder="Telefon" />
-        <input id="f_route" placeholder="Nereden - Nereye" />
-        <textarea id="f_note" placeholder="Tarih / Not"></textarea>
-        <button type="submit">WhatsApp’tan Teklif İste</button>
-      </form>
-    </div>
-  </section>
-
+  <!-- Process (3. sıra) -->
   <section id="process">
     <div class="container">
-      <div class="title">
-        <h2>Süreç</h2>
-        <p>Taşıma işini adım adım planla yürütürüz.</p>
-      </div>
+      <h2 class="section-title">Süreç</h2>
+      <p class="section-sub">Taşıma işini adım adım planla yürütürüz.</p>
 
-      <div class="grid">
-        <div class="card">🔍 <b>Keşif</b> Eşya ve koşullar netleşir.</div>
-        <div class="card">📦 <b>Paketleme</b> Güvenli paketleme yapılır.</div>
-        <div class="card">🚚 <b>Taşıma</b> Zamanında çıkış, dikkatli taşıma.</div>
-        <div class="card">🏠 <b>Yerleştirme</b> İstediğiniz odaya yerleştirme.</div>
+      <div class="steps">
+        <div class="step"><b>Keşif</b><p>Eşya ve koşullar netleşir.</p></div>
+        <div class="step"><b>Paketleme</b><p>Güvenli paketleme yapılır.</p></div>
+        <div class="step"><b>Taşıma</b><p>Zamanında çıkış, dikkatli taşıma.</p></div>
+        <div class="step"><b>Yerleştirme</b><p>İstediğiniz odaya yerleştirme.</p></div>
       </div>
     </div>
   </section>
 
-  <section id="contact" style="background:var(--bg);">
+  <!-- Offer (4. sıra) -->
+  <section id="offer">
     <div class="container">
-      <div class="title">
-        <h2>İletişim</h2>
-        <p>Hemen arayın veya WhatsApp’tan yazın.</p>
-      </div>
+      <h2 class="section-title">Ücretsiz Ekspertiz / Hızlı Teklif</h2>
+      <p class="section-sub">Bilgileri doldurun, WhatsApp üzerinden teklif mesajı otomatik hazırlansın.</p>
 
-      <div class="contact">
+      <div class="offer-grid">
         <div class="card">
-          <p><b>Telefon:</b> <a href="tel:05467129647">0546 712 96 47</a></p>
-          <p><b>WhatsApp:</b> <a href="https://wa.me/905467129647?text=Merhaba,%20Öz%20Nas%20Nakliyat'tan%20nakliyat%20teklifi%20almak%20istiyorum.">Mesaj Gönder</a></p>
-          <p><b>Adres:</b> Siirt</p>
-          <p style="margin-top:10px;color:var(--muted);font-size:13px">
-            Konum bilgisi netleşince haritayı tam noktaya sabitleriz.
-          </p>
+          <h3 style="margin:0 0 10px; font-weight:950;">Hızlı Teklif</h3>
+          <p class="hint">Formu gönderince WhatsApp açılacak ve mesajınız hazır olacak.</p>
+
+          <form class="form" id="offerForm">
+            <input class="input" name="name" placeholder="Ad Soyad" required />
+            <input class="input" name="phone" placeholder="Telefon (ör. 05xx)" required />
+            <input class="input" name="from" placeholder="Nereden? (Semt/Mahalle)" required />
+            <input class="input" name="to" placeholder="Nereye? (Semt/Mahalle)" required />
+            <input class="input" name="detail" placeholder="Not (opsiyonel)" />
+            <button class="btn primary" type="submit">💬 WhatsApp’tan Teklif İste</button>
+          </form>
         </div>
 
-        <iframe title="Harita" src="https://www.google.com/maps?q=Siirt&output=embed" loading="lazy"></iframe>
+        <div class="card">
+          <h3 style="margin:0 0 10px; font-weight:950;">Teklif İçin Hemen Yazın</h3>
+          <p style="margin:0 0 12px; color:var(--muted); font-weight:800; line-height:1.55;">
+            İsterseniz doğrudan WhatsApp’tan yazabilirsiniz. Detayları alıp hızlıca fiyat paylaşırız.
+          </p>
+          <a class="btn primary" style="display:inline-flex" href="https://wa.me/905467129647" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <div style="margin-top:12px; color:var(--muted); font-weight:800;">
+            Telefon: <a href="tel:+905467129647" style="text-decoration:underline;">0546 712 96 47</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <a class="float-wa" href="https://wa.me/905467129647?text=Merhaba,%20Öz%20Nas%20Nakliyat'tan%20nakliyat%20teklifi%20almak%20istiyorum." aria-label="WhatsApp">💬</a>
+  <!-- Contact (5. sıra) -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">İletişim</h2>
+      <p class="section-sub">Hemen arayın veya WhatsApp’tan yazın.</p>
+
+      <div class="grid-3">
+        <div class="card">
+          <h4>Telefon</h4>
+          <p><a href="tel:+905467129647" style="text-decoration:underline;">0546 712 96 47</a></p>
+        </div>
+        <div class="card">
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/905467129647" target="_blank" rel="noopener" style="text-decoration:underline;">Mesaj Gönder</a></p>
+        </div>
+        <div class="card">
+          <h4>Adres</h4>
+          <p>Siirt</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center;">
+        <div style="font-weight:950;">Öz Nas Nakliyat</div>
+        <div class="muted">© <span id="y"></span> Tüm hakları saklıdır.</div>
+      </div>
+    </div>
+  </footer>
 
   <script>
-    function toggleMenu(){
-      document.getElementById("menu").classList.toggle("active");
-    }
-    function closeMenu(){
-      const m=document.getElementById("menu");
-      if(m.classList.contains("active")) m.classList.remove("active");
-    }
+    // Mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    btn?.addEventListener('click', () => {
+      const open = mobileNav.style.display === 'block';
+      mobileNav.style.display = open ? 'none' : 'block';
+      btn.setAttribute('aria-expanded', String(!open));
+    });
+    mobileNav?.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => { mobileNav.style.display='none'; btn.setAttribute('aria-expanded','false'); });
+    });
 
-    // ✅ Formu WhatsApp mesajına çevir
-    function sendToWhatsApp(e){
+    // Offer form -> WhatsApp
+    const form = document.getElementById('offerForm');
+    form?.addEventListener('submit', (e) => {
       e.preventDefault();
-      const name = document.getElementById("f_name").value.trim();
-      const phone = document.getElementById("f_phone").value.trim();
-      const route = document.getElementById("f_route").value.trim();
-      const note = document.getElementById("f_note").value.trim();
+      const data = new FormData(form);
+      const name = (data.get('name') || '').toString().trim();
+      const phone = (data.get('phone') || '').toString().trim();
+      const from = (data.get('from') || '').toString().trim();
+      const to = (data.get('to') || '').toString().trim();
+      const detail = (data.get('detail') || '').toString().trim();
 
       const msg =
-        `Merhaba, Öz Nas Nakliyat’tan teklif almak istiyorum.%0A%0A` +
-        `Ad Soyad: ${encodeURIComponent(name)}%0A` +
-        `Telefon: ${encodeURIComponent(phone)}%0A` +
-        (route ? `Nereden - Nereye: ${encodeURIComponent(route)}%0A` : ``) +
-        (note ? `Tarih / Not: ${encodeURIComponent(note)}%0A` : ``);
+`Merhaba, Siirt evden eve nakliyat için teklif almak istiyorum.
 
-      const waNumber = "905467129647";
-      window.location.href = `https://wa.me/${waNumber}?text=${msg}`;
-    }
+Ad Soyad: ${name}
+Telefon: ${phone}
+Nereden: ${from}
+Nereye: ${to}${detail ? `\nNot: ${detail}` : ''}`;
+
+      const url = "https://wa.me/905467129647?text=" + encodeURIComponent(msg);
+      window.open(url, "_blank");
+    });
+
+    document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
