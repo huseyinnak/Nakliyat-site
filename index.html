@@ -102,26 +102,25 @@
       min-width:220px;
     }
 
-    /* LOGO: büyüt + yakınlaştır (senin sorunun burada çözülecek) */
+    /* LOGO (DÜZELTİLDİ: çerçeve büyüdü, sıkışma bitti) */
     .logo-wrap{
-      width:74px;
-      height:74px;
-      border-radius:18px;
+      width:88px;
+      height:88px;
+      border-radius:20px;
       background:#fff;
-      border:1px solid rgba(0,0,0,.06);
+      border:1px solid rgba(0,0,0,.08);
       box-shadow:0 12px 28px rgba(0,0,0,.22);
       overflow:hidden;
       flex:0 0 auto;
       display:grid;
       place-items:center;
+      padding:10px;
     }
     .logo-wrap img{
       width:100%;
       height:100%;
-      object-fit:cover;
-      /* logo görselinin içindeki boşluklar için agresif yakınlaştırma */
-      transform: scale(1.55);
-      transform-origin:center;
+      object-fit:contain;
+      transform:none;
     }
 
     .brand .texts{
@@ -205,12 +204,12 @@
       font-weight:900;
     }
 
-    /* Hero (arka plan foto) */
+    /* Hero (DÜZELTİLDİ: overlay açıldı, foto daha görünür) */
     .hero{
       color:#fff;
       padding:34px 0 42px;
       background:
-        linear-gradient(180deg, rgba(8,16,34,.92), rgba(10,19,48,.92)),
+        linear-gradient(180deg, rgba(8,16,34,.62), rgba(10,19,48,.62)),
         url("https://i.ibb.co/hJRTTtvy/efae8a65-9379-4f97-a8f0-bb124a45b42a.jpg");
       background-size:cover;
       background-position:center;
@@ -431,13 +430,13 @@
       .offer-grid{grid-template-columns:1fr}
       .steps{grid-template-columns:1fr 1fr}
       .grid-3{grid-template-columns:1fr}
-      .logo-wrap{width:70px;height:70px}
+      .logo-wrap{width:82px;height:82px;padding:9px}
     }
     @media (max-width: 520px){
       .steps{grid-template-columns:1fr}
       .brand .title{font-size:18px}
       .brand .subtitle{font-size:12.5px}
-      .logo-wrap{width:68px;height:68px}
+      .logo-wrap{width:78px;height:78px;padding:8px}
     }
   </style>
 </head>
@@ -450,6 +449,7 @@
         <div class="pill">⏰ <strong>08:00 – 21:00</strong></div>
         <div class="pill">📞 <a href="tel:+905467129647"><strong>0546 712 96 47</strong></a></div>
         <div class="pill">💬 <a href="https://wa.me/905467129647" target="_blank" rel="noopener"><strong>WhatsApp</strong></a></div>
+        <div class="pill">📷 <a href="https://www.instagram.com/oz_nas_nakliyat?igsh=ZzFvZnJhOWp0YTNw" target="_blank" rel="noopener"><strong>Instagram</strong></a></div>
       </div>
     </div>
   </div>
