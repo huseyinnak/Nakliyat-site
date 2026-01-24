@@ -33,8 +33,6 @@
     :root{
       --primary:#0b4ea2;
       --primary2:#083a7a;
-      --bg1:#081022;
-      --bg2:#0a1330;
       --muted:#5b6478;
       --white:#fff;
       --radius:18px;
@@ -102,26 +100,26 @@
       min-width:220px;
     }
 
-    /* LOGO (DÜZELTİLDİ: çerçeve büyüdü, sıkışma .logo-wrap{
-  width:88px;
-  height:88px;
-  border-radius:20px;
-  background:rgba(255,255,255,.96);
-  border:1px solid rgba(0,0,0,.06);
-  box-shadow:0 12px 28px rgba(0,0,0,.22);
-  overflow:hidden;
-  flex:0 0 auto;
-  display:grid;
-  place-items:center;
-  padding:10px; /* sıkışmayı çözen asıl hamle */
-}
-
-.logo-wrap img{
-  width:100%;
-  height:100%;
-  object-fit:contain; /* cover + zoom yerine contain */
-  transform:none;     /* eski zoom’u kapat */
-}
+    /* LOGO: sıkışma çözümü (padding + contain) */
+    .logo-wrap{
+      width:74px;
+      height:74px;
+      border-radius:18px;
+      background:#fff;
+      border:1px solid rgba(0,0,0,.06);
+      box-shadow:0 12px 28px rgba(0,0,0,.22);
+      overflow:hidden;
+      flex:0 0 auto;
+      display:grid;
+      place-items:center;
+      padding:8px;             /* logo nefes alır */
+    }
+    .logo-wrap img{
+      width:100%;
+      height:100%;
+      object-fit:contain;      /* kırpmaz */
+      transform:none;          /* devleştirme yok */
+    }
 
     .brand .texts{
       display:flex;
@@ -140,7 +138,7 @@
       font-weight:850;
     }
 
-    /* Sadece menü butonu kalsın */
+    /* Sadece menü butonu */
     .menu-btn{
       appearance:none;
       border:1px solid rgba(255,255,255,.22);
@@ -204,12 +202,12 @@
       font-weight:900;
     }
 
-    /* Hero (DÜZELTİLDİ: overlay açıldı, foto daha görünür) */
+    /* Hero (arka plan foto) */
     .hero{
       color:#fff;
       padding:34px 0 42px;
       background:
-        linear-gradient(180deg, rgba(8,16,34,.62), rgba(10,19,48,.62)),
+        linear-gradient(180deg, rgba(8,16,34,.55), rgba(10,19,48,.70)),
         url("https://i.ibb.co/hJRTTtvy/efae8a65-9379-4f97-a8f0-bb124a45b42a.jpg");
       background-size:cover;
       background-position:center;
@@ -430,13 +428,13 @@
       .offer-grid{grid-template-columns:1fr}
       .steps{grid-template-columns:1fr 1fr}
       .grid-3{grid-template-columns:1fr}
-      .logo-wrap{width:82px;height:82px;padding:9px}
+      .logo-wrap{width:70px;height:70px}
     }
     @media (max-width: 520px){
       .steps{grid-template-columns:1fr}
       .brand .title{font-size:18px}
       .brand .subtitle{font-size:12.5px}
-      .logo-wrap{width:78px;height:78px;padding:8px}
+      .logo-wrap{width:68px;height:68px}
     }
   </style>
 </head>
@@ -447,8 +445,11 @@
     <div class="container">
       <div class="inner">
         <div class="pill">⏰ <strong>08:00 – 21:00</strong></div>
+
         <div class="pill">📞 <a href="tel:+905467129647"><strong>0546 712 96 47</strong></a></div>
+
         <div class="pill">💬 <a href="https://wa.me/905467129647" target="_blank" rel="noopener"><strong>WhatsApp</strong></a></div>
+
         <div class="pill">📷 <a href="https://www.instagram.com/oz_nas_nakliyat?igsh=ZzFvZnJhOWp0YTNw" target="_blank" rel="noopener"><strong>Instagram</strong></a></div>
       </div>
     </div>
@@ -468,7 +469,6 @@
           </div>
         </a>
 
-        <!-- Sadece menü -->
         <button class="menu-btn" id="menuBtn" aria-label="Menüyü aç">☰ Menü</button>
       </div>
     </div>
@@ -496,7 +496,6 @@
           <h1>Siirt’te Güvenilir Evden Eve Nakliyat</h1>
           <p>Ev, ofis, asansörlü ve şehirler arası taşımacılık. Ücretsiz keşif, net fiyat ve hızlı teklif.</p>
 
-          <!-- Sadece 2 buton -->
           <div class="cta">
             <a class="btn" href="tel:+905467129647">📞 Hemen Ara</a>
             <a class="btn primary" href="https://wa.me/905467129647" target="_blank" rel="noopener">💬 WhatsApp’tan Teklif Al</a>
