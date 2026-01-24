@@ -102,26 +102,26 @@
       min-width:220px;
     }
 
-    /* LOGO (DÜZELTİLDİ: çerçeve büyüdü, sıkışma bitti) */
-    .logo-wrap{
-      width:88px;
-      height:88px;
-      border-radius:20px;
-      background:#fff;
-      border:1px solid rgba(0,0,0,.08);
-      box-shadow:0 12px 28px rgba(0,0,0,.22);
-      overflow:hidden;
-      flex:0 0 auto;
-      display:grid;
-      place-items:center;
-      padding:10px;
-    }
-    .logo-wrap img{
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      transform:none;
-    }
+    /* LOGO (DÜZELTİLDİ: çerçeve büyüdü, sıkışma .logo-wrap{
+  width:88px;
+  height:88px;
+  border-radius:20px;
+  background:rgba(255,255,255,.96);
+  border:1px solid rgba(0,0,0,.06);
+  box-shadow:0 12px 28px rgba(0,0,0,.22);
+  overflow:hidden;
+  flex:0 0 auto;
+  display:grid;
+  place-items:center;
+  padding:10px; /* sıkışmayı çözen asıl hamle */
+}
+
+.logo-wrap img{
+  width:100%;
+  height:100%;
+  object-fit:contain; /* cover + zoom yerine contain */
+  transform:none;     /* eski zoom’u kapat */
+}
 
     .brand .texts{
       display:flex;
